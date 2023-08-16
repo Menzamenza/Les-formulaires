@@ -1,0 +1,43 @@
+body{
+    background-image: url(Jumelle.jpg);
+}
+
+.bloc{
+    
+    display: inline-block; 
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 10px;
+    background: #fff;
+}
+.left{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.right{
+    float: right;
+    margin-left: 30px;
+    
+}
+input,select{
+    border: none;
+    border-bottom: 1px solid rgb(133, 130, 130);
+}
+select{
+    width: 175px;
+    color: rgb(85, 85, 85);
+}
+input[type='button']{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+    margin-left: 90px;
+}
+#username, #email,#password,#confirm,#gender{
+    width: 340px;
+}
+
+ 
