@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+   <!--lien pour l'utlitisation des font awesome-->
+    <title>Formulaire03.4</title>
+    <style>/*insertion de l'attribut style dans le head pour le css*/
+        .bloc{
+            display: flex;
+            gap: 40px;
+            position: relative;
+            left: 30px;
+            top: 100px;
+            font-family: 'Constantia' sans-serif;
+            font-weight: bold;
+            font-size: small;
+        }
+        .formulaire{
+            display: flex;
+            gap: 30px;
+        }
+       
+        img{
+            width: 250px;
+            height: 500px;
+            
+        }
+        input{
+            height: 35px;
+            border: 1px solid rgb(211, 215, 216);
+            margin-bottom: 5px;
+            width: 250px;
+            border-radius: 5px;
+        }
+        form{
+            margin-top: 15px;
+        }
+        .form2{
+            margin-top: 2px;
+        }
+        #firstname{
+            border: 1px solid rgb(180, 112, 10) ;
+        }
+        input[type="submit"] , input[type="reset"]{
+            width: 100px;
+            height: 50px;
+            margin-top: 50px;
+        }
+        input[type="submit"]{
+            background-color:rgb(180, 112, 10) ;
+            border-radius: 10px;
+            color: white;
+        }
+        input[type="reset"]{
+            background-color: #fff;
+            border-radius: 10px ;
+            color:rgb(180, 112, 10) ;
+            border-color: rgb(180, 112, 10);
+        }
+        .custom-radio{
+            border: 1px solid rgb(180, 112, 10);
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+            margin: 4px;
+            vertical-align: middle;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            
+        }
+        .custom-radio>div{
+            width: 11px;
+            height: 11px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .cl:checked+label>div{
+            background-color:rgb(180, 112, 10) ;
+        }
+        .cl{
+            display: none;
+        }
+        span{
+            font-size: 10px;
+            color: #c9c2c2;
+            text-decoration: underline;
+            margin-left: 70px;
+        }
+        .icone{
+            position: relative;
+        }
+        .icone i{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        #lastname{
+            border:1px solid #e71f08;
+        }
+       .don{
+        position: absolute;
+        bottom: 105px;
+        left: 546px;
+        border: 1px solid rgb(180, 112, 10);
+        background: rgb(180, 112, 10);
+        color: #fff;
+        padding-top: 3px;
+        padding-left: 3px;
+        padding-right: 3px;
+       }
+       .hr{
+        border: 1px solid rgb(180, 112, 10);
+        position: absolute;
+        bottom: 105px;
+        width:290px;
+       }
+       .p{
+        position: absolute;
+        top: 300px;
+        left: 60px;
+        color:#fff;
+        font-size: 20px;
+        font-weight:bold;
+       }
+       
+    </style>
+</head>
+<body>
+    <section class="bloc"><!--une section qui va contenir l'enssemble du formulaire-->
+        <div class="img"><!--un div enfant de section qui contient l'image et un texte-->
+            <div class="p"><p>REGISTRE NOW</p></div>
+            <img src="enfant.jpg" alt="un enfant">
+        </div>
+        <div class="formulaire"><!--le second div enfant de section dans lequel se trouve le formulaire-->
+            <div class="form1"><!--ce premier div contient le formulaire se trouvant à gauche-->
+                <form action="" method="get">
+                    <label for="first name">FIRST NAME</label><br>
+                    <input type="text" name="firstname" id="firstname"><br><br>
+
+                    <label for="last name">LAST NAME</label><br>
+                    <div class="icone">
+                    <input type="text" name="lastname" id="lastname"><i class="fa-solid fa-circle-exclamation" style="color: #e71f08;"></i><br><br>
+                    <!--l'element i avec ses attributs et class pour utliser une icone de font awesome-->
+                    </div>
+                    <label for="company">COMPANY</label><br>
+                    <input type="text" name="company" id="company"><br><br>
+
+                    <label for="email">EMAIL</label><br>
+                    <input type="email" name="email" id="email"><br><br>
+
+                    <label for="number">PHONE NUMBER</label><br>
+                    <input type="text" name="number" id="number"><br><br>
+                </form>
+                <li>DONATE US</li>
+                <hr class="hr">
+            </div>
+            <div class="don">&lsaquo;$500&rsaquo;</div>
+            <div class="form2"><!--ce second div contient le formulaire se trouvant à droite-->
+                    <form action="" method="get">
+                        <label for="meal">MEAL PREFERENCE<span class="lunch">Lunch detail</span></label><br>
+                        <input type="text" name="meal" id="meal"><br><br>
+
+                        <label for="payement">PAYEMENT MODE<span class="dtl">Payement detail</span></label><br><br>
+                        
+                        <input type="radio" name="payement" id="cash" class="cl" checked>
+                        <label for="cash" class="custom-radio"><div></div></label>Cash
+                        
+                        <input type="radio" name="payement" id="cheque" class="cl">
+                        <label for="cheque" class="custom-radio"><div></div></label>Cheque
+                        
+                        <input type="radio" name="payement" id="demande" class="cl">
+                        <label for="demande" class="custom-radio"><div></div></label>Demand Draft<br><br>
+
+                        <label for="DD">DD/CHEQUE NO.</label><br>
+                        <input type="text" name="dd" id="dd"><br><br>
+
+                        <label for="dranwn">DRAWN ON (BANK NAME)</label><br>
+                        <input type="text" name="drawn" id="drawn"><br><br>
+
+                        <label for="payable">PAYABLE AT</label><br>
+                        <input type="text" name="payable" id="payable"><br><br><br>
+                        <hr>
+                        <input type="submit" value="SUBMIT">
+                        <input type="reset" value="RESET">
+                        
+                    </form>
+                    
+            </div>
+           
+        </div>   
+    </section>
+</body>
+</html>
