@@ -1,0 +1,76 @@
+body{
+    background: linear-gradient(to left, rgb(151, 38, 9),#e9643c);
+}/*un dédardé lineaire allant de la gauche vers la droite*/
+.bloc{
+    display: inline-block; 
+    margin-left: 30%;
+    margin-top: 5%;
+}/*définir la taille du formulaire*/
+img{/*redimensionnement de l'image*/
+    width: 350px;
+    height: 400px;
+}
+.right{/*placer l'image à droite*/
+    float: right;   
+}
+.left{/*mettre le formulaire à gauche*/
+    float: left;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(150, 21, 7);
+    color: #fff;
+    padding-left: 5px;
+}
+h2{/*définir la mise en forme du titre h2*/
+    text-align: center;
+    color: rgb(245, 131, 131);
+}
+input,textarea{/*mettre en place les bordures dont on a besoin*/
+    border: none;
+    background-color: transparent;
+    border-bottom:1px solid white ;
+}
+input[type='button']{/*la mise es forme du bouton d'envoi avec l'input type button*/
+    width: 130px;
+    height: 30px;
+    background: linear-gradient(rgb(245, 131, 131),rgb(150, 21, 7));
+    border: none;
+    margin-left: 10px;
+}
+/*définir les espaces entre les élémnts de manières adéquates pour une mise en forme régulière*/
+#price,#people{
+    border-bottom: none;
+}
+#name,#phone,#price,#people{
+    margin-left: 60px;
+}
+#mail{
+    margin-left: 67px;
+}
+#comment{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+::placeholder{/*les textes du placeholder seront ecrits en blanc*/
+    color: #fff;
+}
+/*définition des média queries pour une bonne responsivité*/
+@media screen and (max-width:600px)  {
+    .bloc{
+      display:flex; 
+      flex-flow: column wrap; 
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:601px)and (max-width:1200px){
+    .bloc{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px ;
+    }
+   
+    
+}
