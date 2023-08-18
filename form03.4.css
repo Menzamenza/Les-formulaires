@@ -1,0 +1,119 @@
+.bloc{
+    display: flex;
+    gap: 40px;
+    position: relative;
+    left: 30px;
+    top: 100px;
+    font-family: 'Constantia' sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+.formulaire{
+    display: flex;
+    gap: 30px;
+}
+
+img{
+    width: 250px;
+    height: 500px;
+    
+}
+input{
+    height: 35px;
+    border: 1px solid rgb(211, 215, 216);
+    margin-bottom: 5px;
+    width: 250px;
+    border-radius: 5px;
+}
+form{
+    margin-top: 15px;
+}
+.form2{
+    margin-top: 2px;
+}
+#firstname{
+    border: 1px solid rgb(180, 112, 10) ;
+}
+input[type="submit"] , input[type="reset"]{
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+}
+input[type="submit"]{
+    background-color:rgb(180, 112, 10) ;
+    border-radius: 10px;
+    color: white;
+}
+input[type="reset"]{
+    background-color: #fff;
+    border-radius: 10px ;
+    color:rgb(180, 112, 10) ;
+    border-color: rgb(180, 112, 10);
+}
+.custom-radio{
+    border: 1px solid rgb(180, 112, 10);
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 4px;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.custom-radio>div{
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border-radius: 50%;
+}
+.cl:checked+label>div{
+    background-color:rgb(180, 112, 10) ;
+}
+.cl{
+    display: none;
+}
+span{
+    font-size: 10px;
+    color: #c9c2c2;
+    text-decoration: underline;
+    margin-left: 70px;
+}
+.icone{
+    position: relative;
+}
+.icone i{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+#lastname{
+    border:1px solid #e71f08;
+}
+.don{
+position: absolute;
+bottom: 105px;
+left: 546px;
+border: 1px solid rgb(180, 112, 10);
+background: rgb(180, 112, 10);
+color: #fff;
+padding-top: 3px;
+padding-left: 3px;
+padding-right: 3px;
+}
+.hr{
+border: 1px solid rgb(180, 112, 10);
+position: absolute;
+bottom: 105px;
+width:290px;
+}
+.p{
+position: absolute;
+top: 300px;
+left: 60px;
+color:#fff;
+font-size: 20px;
+font-weight:bold;
+}
